@@ -1,0 +1,48 @@
+/* 测试样式 */
+.test {
+    background-color: aquamarine;
+}
+
+/* 设置基础样式 设计师提供 */
+body {
+    font: 14px/1.5 Helvetica Neue, Helvetica, Arial, Microsoft Yahei, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;
+    color: #333;
+    background-color: #fff;
+    min-width: 1226px;
+    /* 测试 */
+    /* height: 5000px; */
+}
+
+/* 统一设置 a 的样式 */
+a {
+    text-decoration: none;
+    color: inherit;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+a:hover {
+    color: #ff6700;
+}
+
+/* 居中容器默认样式 */
+.container {
+    width: 1226px;
+    margin: 0 auto;
+
+    /* test */
+    /* background-color: #bfa; */
+}
+
+/* 图片默认样式 */
+img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+/* 清除浮动和高度塌陷 */
+.clearfix::before,
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
