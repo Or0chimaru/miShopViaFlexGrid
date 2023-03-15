@@ -1,5 +1,137 @@
-.site-topbar {
+.header .site-topbar {
   position: relative;
   height: 40px;
   background-color: #333;
+  color: #b0b0b0;
+  font-size: 12px;
+}
+
+.site-topbar .sep {
+  line-height: 40px;
+  color: #424242;
+  margin: 0 6.7px;
+}
+.site-topbar a:hover {
+  color: #fff;
+}
+.site-topbar .container {
+  display: flex;
+  justify-content: space-between;
+}
+.site-topbar .topbar-nav {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+}
+.site-topbar .topbar-right {
+  display: flex;
+  justify-content: space-between;
+}
+.site-topbar .topbar-right .topbar-info {
+  height: 40px;
+}
+.site-topbar .topbar-right .topbar-cart {
+  position: relative;
+  width: 120px;
+  height: 40px;
+  margin-left: 15px;
+  transition: all 0.2s;
+}
+
+.topbar-nav {
+  display: flex;
+  position: relative;
+  line-height: 40px;
+}
+.topbar-nav a {
+  display: block;
+  position: relative;
+  top: 1px;
+  height: 40px;
+  line-height: 40px;
+}
+.topbar-nav .appcode {
+  position: absolute;
+  top: 40px;
+  width: 124px;
+  left: 50%;
+  margin-left: -62px;
+  height: 0px;
+  line-height: 1;
+  color: #333;
+  font-size: 14px;
+  text-align: center;
+  box-shadow: 0 1px 5px #aaa;
+  overflow: hidden;
+  transition: height 0.3s;
+}
+.topbar-nav .appcode img {
+  display: block;
+  width: 90px;
+  height: 90px;
+  margin: 18px auto 12px;
+}
+.topbar-nav .topbar-download::before {
+  content: "";
+  display: none;
+  position: absolute;
+  border-width: 0 8px 8px;
+  border-style: solid;
+  border-color: transparent transparent #fff;
+  left: 50%;
+  bottom: 0;
+  margin-left: -8px;
+}
+.topbar-nav .topbar-download:hover .appcode {
+  height: 148px;
+}
+.topbar-nav .topbar-download:hover::before {
+  display: block;
+}
+
+.topbar-info {
+  display: flex;
+  justify-content: space-between;
+  line-height: 40px;
+}
+.topbar-info a {
+  padding: 0 5px;
+}
+.topbar-info .message {
+  padding: 0 10px;
+}
+.topbar-info .sep {
+  margin: 0;
+}
+
+.topbar-cart .cart-mini {
+  display: block;
+  position: relative;
+  z-index: 40;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #424242;
+  transition-delay: 0.35s;
+}
+.topbar-cart .cart-menu {
+  position: absolute;
+  height: 0;
+  width: 316px;
+  right: 0;
+  color: #333;
+  line-height: 100px;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  transition: height 0.3s;
+}
+.topbar-cart:hover .cart-mini {
+  color: #ff6700;
+  background-color: #fff;
+  transition-delay: 0s;
+}
+.topbar-cart:hover .cart-menu {
+  height: 100px;
 }

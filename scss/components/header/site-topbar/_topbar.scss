@@ -1,5 +1,8 @@
-.site-topbar {
-    position: relative;
-    height: 40px;
-    background-color: #333;
-}
+// topbar 内容整体布局
+@use "./topbar-layout";
+
+    // topbar-nav 样式
+    @use "./topbar-nav";
+
+    // topbar 右边 信息&购物车 样式
+    @use "./topbar-right";

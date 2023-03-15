@@ -1,0 +1,73 @@
+.header {
+
+    // topbar 可见框
+    .site-topbar {
+        position: relative;
+        height: 40px;
+        background-color: #333;
+        color: #b0b0b0;
+        font-size: 12px;
+    }
+}
+
+.site-topbar {
+
+    // topbar 分隔线 统一样式
+    .sep {
+        line-height: 40px;
+        color: #424242;
+        margin: 0 6.7px;
+    }
+
+    // topbar 链接 统一样式
+    a:hover {
+        color: #fff;
+    }
+
+    // 导航条容器
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // 导航条左边 导航链接
+    .topbar-nav {
+        display: flex;
+        justify-content: space-between;
+        // test
+        // width: 787px;
+        height: 40px;
+        // background-color: pink;
+    }
+
+    // 导航条右边 信息&购物车
+    .topbar-right {
+        display: flex;
+        justify-content: space-between;
+
+        // test
+        // width: 300px;
+        // height: 40px;
+        // background-color: gold;
+
+        // 信息
+        .topbar-info {
+
+            // test
+            // width: 140px;
+            height: 40px;
+            // background-color: skyblue;
+        }
+
+        // 购物车
+        .topbar-cart {
+            position: relative;
+            width: 120px;
+            height: 40px;
+            margin-left: 15px;
+            transition: all .2s;
+            // test
+            // background-color: aqua;
+        }
+    }
+}

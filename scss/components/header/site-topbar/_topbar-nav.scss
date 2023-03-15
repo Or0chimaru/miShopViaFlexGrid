@@ -1,0 +1,65 @@
+.topbar-nav {
+    display: flex;
+    position: relative;
+    line-height: 40px;
+
+    a {
+        display: block;
+        position: relative;
+        top: 1px;
+        height: 40px;
+        line-height: 40px;
+        
+
+        // test
+        // background-color: yellowgreen;
+    }
+
+    // 二维码 弹出卡片
+    .appcode {
+        position: absolute;
+        top: 40px;
+        width: 124px;
+        left: 50%;
+        margin-left: -62px;
+        // height: 148px;
+        height: 0px;
+        line-height: 1;
+        color: #333;
+        font-size: 14px;
+        text-align: center;
+        box-shadow: 0 1px 5px #aaa;
+        overflow: hidden;
+        transition: height .3s;
+
+        img {
+            display: block;
+            width: 90px;
+            height: 90px;
+            margin: 18px auto 12px;
+        }
+    }
+
+    // 小三角
+    .topbar-download::before {
+        content: '';
+        display: none;
+        position: absolute;
+        border-width: 0 8px 8px;
+        border-style: solid;
+        border-color: transparent transparent #fff;
+        left: 50%;
+        bottom: 0;
+        margin-left: -8px;
+    }
+
+    // 下载app 鼠标移入效果
+    .topbar-download:hover {
+        .appcode {
+            height: 148px;
+        }
+        &::before {
+            display: block;
+        }
+    }
+}

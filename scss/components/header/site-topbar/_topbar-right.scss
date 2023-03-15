@@ -1,0 +1,58 @@
+// 信息区样式
+.topbar-info {
+    display: flex;
+    justify-content: space-between;
+    line-height: 40px;
+
+    a {
+        padding: 0 5px;
+    }
+    .message {
+        padding: 0 10px;
+    }
+    .sep {
+        margin: 0;
+    }
+}
+
+// 购物车样式
+.topbar-cart {
+    // 购物车 悬浮按钮
+    .cart-mini {
+        display: block;
+        position: relative;
+        z-index: 40;
+        width: 120px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        background-color: #424242;
+        // 避免鼠标移出后购物车按钮比购物车菜单提前恢复状态
+        transition-delay: .35s;
+    }
+
+    // 购物车菜单
+    .cart-menu {
+        position: absolute;
+        height: 0;
+        width: 316px;
+        right: 0;
+        color: #333;
+        line-height: 100px;
+        text-align: center;
+        overflow: hidden;
+        box-shadow: 0 2px 10px rgba($color: #000000, $alpha: .15);
+        transition: height .3s;
+    }
+
+    // 购物车按钮 移入效果
+    &:hover .cart-mini {
+        color: #ff6700;
+        background-color: #fff;
+        transition-delay: 0s;
+    }
+
+    &:hover .cart-menu {
+        height: 100px;
+    }
+}
